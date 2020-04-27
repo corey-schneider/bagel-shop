@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-light" style="background-color: #42d7f5;">
   <a class="navbar-brand">Bagel Patch</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -82,7 +82,13 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">&copy; 2020 Copyright 
-    <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a>
+    <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a><br>
+    <% if current_user %>
+      <%= link_to "Log out", logout_path %> [<%= current_user.name %>; <%= current_user.email %>].
+        <% else %>
+      <%= link_to "Log in", login_path %>
+    <% end %>
+    
   </div>
   <!-- Copyright -->
 
