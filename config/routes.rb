@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'menu/index'
+  get 'contact/index'
+  get 'about/index'
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'
