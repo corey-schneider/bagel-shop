@@ -1,2 +1,163 @@
-<h1>Menu#index</h1>
-<p>Find me in app/views/menu/index.html.erb</p>
+<div class="container">
+
+<%= render 'navigation' %>
+
+<br><br><br>
+
+<!-- Thank you nahian91 (https://bootsnipp.com/nahian91) at https://bootsnipp.com/snippets/aRmbz -->
+
+<body>
+	<section class="menu_list mt-60 mb-60">
+	 <div class="container">
+		<div class="row">
+		   <div class="col-xl-12">
+			  <div class="section-title text-center mb-60">
+				 <!--<p>Famous for good food</p>-->
+				 <h4>Our Menu</h4>
+			  </div>
+		   </div>
+		</div>
+		<div class="row">
+		   <ul class="nav nav-tabs menu_tab" id="myTab" role="tablist">
+			  <li class="nav-item">
+				 <a class="nav-link active show" id="bagel-tab" data-toggle="tab" href="#bagel" role="tab" aria-selected="true">Bagels</a>
+			  </li>
+			  <li class="nav-item">
+				 <a class="nav-link" id="cream-cheese-tab" data-toggle="tab" href="#cream-cheese" role="tab" aria-selected="false">Cream cheese</a>
+			  </li>
+		   </ul>
+		</div>
+							 <br><div class="text-center"><h4>Bagel prices are:  <i>each / dozen</i></h4></div>
+		<div class="row">
+		   <div class="tab-content col-xl-12" id="myTabContent">
+			  <div class="tab-pane fade active show" id="bagel" role="tabpanel" aria-labelledby="bagel-tab">
+				 <div class="row">
+					<div class="col-md-6">
+					   <div class="single_menu_list">
+						  <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRAn3WVcnwZzw9r5HDVX-pQgFKVV8pD7jnaUoUxp_o76Yv9941g-_7hgstPh5Sb8eYJr6XmWtn2sd2YoOAJkdQDqrz3EjCJ&usqp=CAY" alt="Plain bagel">
+						  <div class="menu_content">
+							 <h4>Plain  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="https://cdn.shopify.com/s/files/1/1749/6693/products/sesame-bagel_1024x1024.png?v=1531755283" alt="">
+						  <div class="menu_content">
+							 <h4>Sesame  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="https://cdn.shopify.com/s/files/1/1749/6693/products/blueberry_1024x1024.jpg?v=1531755323" alt="">
+						  <div class="menu_content">
+							 <h4>Blueberry  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					</div>
+					<div class="col-md-6">
+					   <div class="single_menu_list">
+						  <img src="https://cdnimg.webstaurantstore.com/images/products/large/428064/1608850.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Everything  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="https://www.koerner-co.com/3058-large_default/poppy-seed-bagel.jpg" alt="Poppy seed bagel">
+						  <div class="menu_content">
+							 <h4>Poppy  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="https://bagelbiz.com/wp-content/uploads/2017/06/Cin-Raison_Retouch_750x750.png" alt="">
+						  <div class="menu_content">
+							 <h4>Cinnamon Raisin  <span>$1.25 / $10</span></h4>
+							 <p>Toasted: add 25&cent;<br>
+							 Buttered: add 25&cent;<br>
+							 Cream cheese (any): add 50&cent;</p>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+			  <div class="tab-pane fade" id="cream-cheese" role="tabpanel" aria-labelledby="cream-cheese-tab">
+				 <div class="row">
+					<div class="col-md-6">
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					</div>
+					<div class="col-md-6">
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					   <div class="single_menu_list">
+						  <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+						  <div class="menu_content">
+							 <h4>Chicken Fried Salad  <span>$45</span></h4>
+							 <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+
+		</div>
+		
+	 </div>
+  </section>
+</body>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<%= render 'footer' %>

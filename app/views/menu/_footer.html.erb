@@ -1,0 +1,29 @@
+<!-- Footer 
+<footer class="page-footer font-small blue fixed-bottom">-->
+<footer class="footer">
+  
+  <div class="container px-lg-5">
+  <div class="row mx-lg-n5">
+    <div class="col py-3 px-lg-5 text-center"><b>Hours of Operation</b><br>
+    Monday - Sunday: 5AM - 3PM
+    </div>
+    <div class="col py-3 px-lg-5 border-left text-center"><b>Contact Us</b><br>
+    705 Medford Ave # A, East Patchogue, NY 11772<br>
+    Phone: (631) 289-4949</div>
+  </div>
+</div>
+  <br>
+  <!-- Copyright -->
+  <div class="container text-center py-3">
+    <span class="text-muted">&copy; 2020 Copyright 
+    <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a><br>
+    <% if current_user %>
+      <%= link_to "Log out", logout_path %> [<%= current_user.name %>; <%= current_user.email %>].
+        <% else %>
+      <p style="font-size:10px"><%= link_to "Admin log in", login_path %></p>
+    <% end %></span>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
