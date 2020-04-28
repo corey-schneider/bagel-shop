@@ -1,20 +1,29 @@
-
-<nav class="navbar navbar-light" style="background-color: #42d7f5;">
+<div class="container">
+<!-- <nav class="navbar navbar-light" style="background-color: #D99F7E;">
   <a class="navbar-brand">Bagel Patch</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
-</nav>
+</nav> -->
+
+<%= render 'navigation' %>
+
 
 <h1>Pages#index</h1>
 <p>Find me in app/views/pages/index.html.erb</p>
 
+
+<!-- slideshow -->
+<%= render 'slideshow' %>
+<!-- end -->
+
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button>
-
+-->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -35,62 +44,52 @@
     </div>
   </div>
 </div>
+<!-- end -->
+
+<br><br><br>
 
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Deal #1</h5>
+      <p class="card-text">Talk about some promotion.</p>
     </div>
     <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago <span class="badge badge-secondary">New!</span></small>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title">Deal #2</h5>
+      <p class="card-text">Talk about some promotion.</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <small class="text-muted">Last updated 5 mins ago</small>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5 class="card-title">Deal #3</h5>
+      <p class="card-text">Talk about some promotion.</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <small class="text-muted">Last updated 38 mins ago</small>
     </div>
   </div>
+</div>
+
+<br><br><br>
+
+<!-- testimonials -->
+<blockquote class="blockquote">
+  <p class="mb-0">Bagels here are great!</p>
+  <footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
+</blockquote>
+<!-- end -->
+
 </div>
 
 
 
 
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small blue fixed-bottom">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">&copy; 2020 Copyright 
-    <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a><br>
-    <% if current_user %>
-      <%= link_to "Log out", logout_path %> [<%= current_user.name %>; <%= current_user.email %>].
-        <% else %>
-      <%= link_to "Admin log in", login_path %>
-    <% end %>
-    
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+<%= render 'footer' %>
