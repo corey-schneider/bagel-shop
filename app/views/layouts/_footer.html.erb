@@ -16,7 +16,7 @@
   <br>
   <!-- Copyright -->
   <div class="container text-center py-3">
-    <span class="text-muted">&copy; 2020 Copyright 
+    <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <!-- auto-updates copy right year -->
     <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a><br>
     <% if current_user %>
       <%= link_to "Log out", logout_path %> [<%= current_user.name %>; <%= current_user.email %>].
