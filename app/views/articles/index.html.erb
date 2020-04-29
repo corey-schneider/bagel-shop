@@ -1,29 +1,28 @@
 
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+<h1>Bagel Patch - Add a special deal</h1>
+<!--<%= link_to 'My Blog', controller: 'articles' %>-->
 <%= link_to 'Home', controller: 'pages' %>
-
-<h1>Listing Articles</h1>
- <%= link_to 'New article', new_article_path %>
+<br>
+ <%= link_to 'Add a new deal', new_article_path %>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th>Author</th>
+    <th>Offer</th>
+    <th style="padding-left: 50px">Details</th>
+    <th style="padding-left: 50px">Author</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><% if article.user %>
+      <td style="padding-left: 50px"><%= article.text %></td>
+      <td style="padding-left: 50px"><% if article.user %>
           <%= article.user.name %>
           <% end %>
       </td>
       
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+      <td><%= link_to 'Show', article_path(article), style: 'margin-left: 20px' %></td>
+      <td><%= link_to 'Edit', edit_article_path(article), style: 'margin-left: 20px' %></td>
+      <td><%= link_to 'Delete', article_path(article), style: 'margin-left: 20px',
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
