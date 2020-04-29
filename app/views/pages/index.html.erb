@@ -100,6 +100,9 @@
 </div>
   <% end %>-->
   
+  <% if current_user %>
+      <%= link_to 'Edit the deals', controller: 'articles' %>
+  <% end %>
   
   <div class="row d-flex justify-content-around">
   <% @articles.each do |article| %>
@@ -126,8 +129,68 @@
 <br><br><br>
 
 <!-- testimonials -->
-<blockquote class="blockquote">
-  <p class="mb-0">Bagels here are great!</p>
-  <footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
-</blockquote>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Customer Testimonials</h1>
+    <p class="lead">Submit your own for a chance to win free bagels.</p>
+    <hr class="my-4">
+      <div class="column d-flex justify-content-around col-xs-6">
+    <div class="col-4">
+      <blockquote class="blockquote">
+        <p class="mb-0">Bagels here are great!</p>
+        <footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
+      </blockquote>
+    </div>
+    
+    <div class="col-4">
+        <blockquote class="blockquote">
+      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+    </blockquote>
+    </div>
+  </div>
+  
+    <br><br>
+
+      <div class="column d-flex justify-content-around col-xs-6">
+     <div class="col-4">
+        <blockquote class="blockquote">
+      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+    </blockquote>
+    </div>
+      <div class="col-4">
+        <blockquote class="blockquote">
+      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+    </blockquote>
+    </div>
+    </div>
+    
+    <br><br>
+      <div class="column d-flex justify-content-around col-xs-6">
+      <div class="col-4">
+        <blockquote class="blockquote">
+      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+    </blockquote>
+    </div>
+    </div>
+    
+      <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+    <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+  </div>
+    
+    
+  </div>
+</div>
 <!-- end -->

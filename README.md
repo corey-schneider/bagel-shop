@@ -12,10 +12,16 @@ Bagel Patch uses a number of open-source projects to work properly:
 * [Ruby on Rails] - Web application framework
 
 # TO DO:
-* Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html) - Make a portal and tie this into "deals" so logged-in users can edit / delete deals, testimonials, pictures, etc
+<s>* Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html)</s>
+* Make a portal <s>and tie this into "deals" so logged-in users can edit / delete deals</s>, testimonials, pictures, etc
 * Add picture gallery section
 * Add contact us section with a space for a user to leave a testimonial that can be featured (and a chance to win a dozen bagels or something)
 * Sign up with your email for exclusive offers? Point system with accounts maybe?
+* Leave website feedback in bottom right corner
+* Add map
+* Add all contents of menu
+* Make login email non-case sensitive
+<s>* Click on carousel to be taken to the menu</s>
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 

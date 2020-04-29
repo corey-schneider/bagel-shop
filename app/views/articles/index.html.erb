@@ -1,35 +1,35 @@
 
+<br><br>
 <h1>Bagel Patch - Add a special deal</h1>
 <!--<%= link_to 'My Blog', controller: 'articles' %>-->
-<%= link_to 'Home', controller: 'pages' %>
 <br>
- <%= link_to 'Add a new deal', new_article_path %>
 <table>
   <tr>
-    <th>Offer</th>
-    <th style="padding-left: 50px">Information</th>
-    <th style="padding-left: 50px">Details</th>
-    <th style="padding-left: 50px">Author</th>
+    <th style="padding: 15px 50px">Offer</th>
+    <th style="padding: 0px 50px">Information</th>
+    <th style="padding: 0px 45px">Availability</th>
+    <th style="padding: 0px 30px">Author</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
-      <td style="padding-left: 50px"><%= article.text %></td>
-      <td style="padding-left: 50px"><% if article.details %>
+      <td><%= article.text %></td>
+      <td><% if article.details %>
           <%= article.details %>
           <% end %>
       </td>
-      <td style="padding-left: 50px"><% if article.user %>
+      <td><% if article.user %>
           <%= article.user.name %>
           <% end %>
       </td>
       
-      <td><%= link_to 'Show', article_path(article), style: 'margin-left: 20px' %></td>
-      <td><%= link_to 'Edit', edit_article_path(article), style: 'margin-left: 20px' %></td>
-      <td><%= link_to 'Delete', article_path(article), style: 'margin-left: 20px',
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Delete', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+ <h3 style="text-align:right"><%= link_to '+ Add a new deal', new_article_path %></h3>
