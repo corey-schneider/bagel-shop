@@ -27,6 +27,8 @@ Bagel Patch uses a number of open-source projects to work properly:
 * <s>Make navigation bar work for mobile users</s>
 * Add content to Contact section
 * <s>Do not allow non-logged in users to edit / delete / create any articles</s>
+* Add 404 pages before publishing
+* HTTPS?
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 
