@@ -4,9 +4,13 @@
 // that code so it'll be compiled.
 import 'bootstrap'
 require("@rails/ujs").start()
-require("turbolinks").start()
+//require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("custom/about-page-script")
+require("custom/openingTimes.jquery")
+require("custom/openingTimes.jquery.min")
+//require("custom/test")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

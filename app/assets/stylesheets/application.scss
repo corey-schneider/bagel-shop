@@ -16,6 +16,11 @@
   margin: 0 auto;
 }
 
+/* color of selected nav bar item */
+.nav-active {
+    background-color: #8C5D42;
+}
+
 /* FOOTER - thank you https://getbootstrap.com/2.3.2/examples/sticky-footer.html */
       html,
       body {
@@ -48,6 +53,44 @@
         }
       }
 /* End of footer */
+
+/* Hours table properties */
+table#hours {
+    border: 1px solid #000000;
+    background-color: #F9F8EE;
+    border-collapse: collapse;
+    font-family: 'Proxima-Nova-Soft', 'Verdana', sans-serif;
+}
+/* add a new font for the Hours table */
+@font-face {
+    font-family: "Proxima-Nova-Soft";
+    src: url("../css/Proxima-Nova-Soft.ttf") format("truetype");
+}
+
+/* th and td elements in a table */
+th, td {
+    padding: 10px;
+    border: 1px solid #b3b3ae;
+    border-collapse: collapse;
+}
+
+/* Colors every even element's background white */
+tr:nth-child(even) {
+    background-color: white;
+}
+
+
+/* Works with "./about.html" and "./js/about-page-script.js" to highlight today's date on the business hours sheet. */
+tr[id="selected-day-open"] {
+    background-color: #61FF65;
+    padding:50px;
+    border: 2px dotted black;
+}
+tr[id="selected-day-closed"] {
+    background-color: rgba(255, 0, 0, 0.67);
+    padding:50px;
+    border: 2px dotted black;
+}
 
 
 .mb-60 {

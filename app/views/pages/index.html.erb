@@ -110,12 +110,13 @@
           <h5 class="card-title"><%= article.title %></h5>
           <p class="card-text"><%= article.text %></p>
         </div>
-        
+        <% if article.details %>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago by <% if article.user %>
-          <%= article.user.name %>
-          <% end %> - <span class="badge badge-secondary">New!</span></small>
+          <small class="text-muted">Available 
+          <%= article.details %>
+          </small>
         </div>
+        <% end %>
       </div>
   </div>
   <% end %>

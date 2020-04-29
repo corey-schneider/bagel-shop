@@ -7,6 +7,7 @@
 <table>
   <tr>
     <th>Offer</th>
+    <th style="padding-left: 50px">Information</th>
     <th style="padding-left: 50px">Details</th>
     <th style="padding-left: 50px">Author</th>
   </tr>
@@ -15,6 +16,10 @@
     <tr>
       <td><%= article.title %></td>
       <td style="padding-left: 50px"><%= article.text %></td>
+      <td style="padding-left: 50px"><% if article.details %>
+          <%= article.details %>
+          <% end %>
+      </td>
       <td style="padding-left: 50px"><% if article.user %>
           <%= article.user.name %>
           <% end %>
