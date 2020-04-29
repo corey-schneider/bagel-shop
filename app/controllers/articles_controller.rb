@@ -1,18 +1,22 @@
 class ArticlesController < ApplicationController
     
     def index
+        authenticate_admin
         @articles = Article.all
     end
     
     def show
+        authenticate_admin
         @article = Article.find(params[:id])
     end
     
     def new
+        authenticate_admin
         @article = Article.new
     end
     
     def edit
+        authenticate_admin
         @article = Article.find(params[:id])
     end
     
@@ -29,6 +33,7 @@ class ArticlesController < ApplicationController
     
     def update
         @article = Article.find(params[:id])
+        @article.user = current_user
  
         if @article.update(article_params)
             redirect_to @article
@@ -39,8 +44,11 @@ class ArticlesController < ApplicationController
     
     def destroy
         @article = Article.find(params[:id])
-        @article.destroy
-        redirect_to articles_path
+        
+        if current_user
+            @article.destroy
+            redirect_to articles_path
+        end
     end
     
     private

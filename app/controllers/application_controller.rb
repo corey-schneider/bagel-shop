@@ -1,6 +1,11 @@
 class ApplicationController < ActionController::Base
     
-    helper_method :current_user
+    helper_method :current_user, :authenticate_admin
+    
+    def authenticate_admin
+        return unless !current_user
+        redirect_to root_path
+    end
     
     def current_user
         if session[:user_id]
