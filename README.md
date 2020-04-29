@@ -26,6 +26,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Make the navigation bar look less like puke
 * <s>Make navigation bar work for mobile users</s>
 * Add content to Contact section
+* Do not allow non-logged in users to EDIT any articles
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 
