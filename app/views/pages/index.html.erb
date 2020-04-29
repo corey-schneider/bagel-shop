@@ -100,9 +100,7 @@
 </div>
   <% end %>-->
   
-  <% if current_user %>
-      <%= link_to 'Edit the deals', controller: 'articles' %>
-  <% end %>
+
   
   <div class="row d-flex justify-content-around">
   <% @articles.each do |article| %>
@@ -127,7 +125,10 @@
   </div>
   <% end %>
 </div>
-
+<h6 style="text-align:right"><% if current_user %>
+      <%= link_to 'Edit the deals', controller: 'articles' %>
+  <% end %></h6>
+  
 
 <br><br><br>
 
