@@ -14,7 +14,8 @@
 
         <div class="collapse navbar-collapse border-left" id="navbarNavDropdown">
           <ul class="navbar-nav nav-fill w-100 align-items-start">
-            <li class="nav-item border-left <%= 'active' if current_page?(pages_index_path) %>">
+            <!-- current_page?( ... ) can also be used as current_page?(controller: 'pages') -->
+            <li class="nav-item border-left <%= 'active' if current_page?(pages_index_path) || current_page?(root_path) %>">
               <%= link_to 'Home', { controller: 'pages' }, class: 'nav-link' %>
             </li>
             <li class="nav-item border-left <%= 'active' if current_page?(menu_index_path) %>">
