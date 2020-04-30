@@ -58,12 +58,25 @@ table#hours {
     border: 1px solid #000000;
     background-color: #F9F8EE;
     border-collapse: collapse;
-    font-family: 'Proxima-Nova-Soft', 'Verdana', sans-serif;
+    font-family: 'Louis George Cafe';
+    font-size: 20px;
 }
 /* add a new font for the Hours table */
 @font-face {
-    font-family: "Proxima-Nova-Soft";
-    src: url("../css/Proxima-Nova-Soft.ttf") format("truetype");
+    font-family: "Kenyan-coffee-rg";
+    src: url("../fonts/kenyan-coffee-rg.ttf") format("truetype");
+}
+@font-face {
+    font-family: "CODE Bold";
+    src: url("../fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Louis George Cafe";
+    src: url("../fonts/Louis George Cafe.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Louis George Cafe Bold";
+    src: url("../fonts/Louis George Cafe Bold.ttf") format("truetype");
 }
 
 /* th and td elements in a table */
@@ -187,6 +200,8 @@ tr[id="selected-day-closed"] {
      border-bottom: 1px solid #806c58;
      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
      border-radius: 0px;
+     font-size: 18px;
+     font-family: 'Louis George Cafe Bold';
 }
 
 .navbar-default {
