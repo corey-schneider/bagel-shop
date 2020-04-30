@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #[Security] Scans Gemfile.lock for insecure dependencies. Usage: "bundle-audit check"
 gem 'bundler-audit'
+
+gem 'cancancan'
