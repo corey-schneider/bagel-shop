@@ -1,15 +1,17 @@
 # Bagel Patch Website
 ##### Created & designed by Corey Schneider
 ###### In-progress Computer Science B.S. at the University of North Carolina - Charlotte
+
 #
-#
-#
+
 ### Credit to open-source contributors
 
 Bagel Patch uses a number of open-source projects to work properly:
 * [Twitter Bootstrap] - Open-source CSS framework *(this makes the website pretty)*
 * [jQuery] - A fast, small, and feature-rich JavaScript library
 * [Ruby on Rails] - Web application framework
+
+#
 
 # TO DO:
 * <s>Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html)</s>

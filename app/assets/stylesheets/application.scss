@@ -19,10 +19,6 @@
   margin: 0 auto;
 }
 
-/* color of selected nav bar item */
-.nav-active {
-    background-color: #8C5D42;
-}
 
 /* FOOTER - thank you https://getbootstrap.com/2.3.2/examples/sticky-footer.html */
       html,
@@ -33,11 +29,11 @@
 
       /* Wrapper for page content to push down footer */
       #wrap {
-        min-height: 100%;
+        min-height: 70%;
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto 30px;
+        margin: 0 auto 0px;
       }
 
       /* Set the fixed height of the footer here */
@@ -177,3 +173,62 @@ tr[id="selected-day-closed"] {
 	color: #FF5E18;
 	font-style: italic;
 }
+
+
+
+
+
+
+
+
+.navbar {
+     background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
+     background-repeat: no-repeat;
+     border-bottom: 1px solid #806c58;
+     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+     border-radius: 0px;
+}
+
+.navbar-default {
+     background-color: #2FA4E7;
+     border-color: #1995DC;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus ,
+.navbar-default .navbar-nav > li > a {
+     color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+     color: #FFF;
+     background-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.container2 {
+    //box-shadow: 6px 0 4px  -4px #222 , -6px 0 4px  -4px #222;
+    box-shadow: 0px 0px 30px gray;
+    background: #FFFFFF;
+    padding: 2rem !important;
+    // margin: 0px 50px 0px 50px;
+}
+body {
+    background: #fafafa;
+}
+
+//text color wanted: #483729
