@@ -31,8 +31,9 @@
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Delete', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+              data: { confirm: 'Are you sure you wish to remove this offer? This CANNOT be undone - You will have to make a new offer' } %></td>
     </tr>
   <% end %>
 </table>
  <h3 style="text-align:right"><%= link_to '+ Add a new deal', new_article_path %></h3>
+ <br><br><br>

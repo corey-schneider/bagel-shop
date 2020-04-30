@@ -15,23 +15,49 @@
     </div>
   <% end %>
  
-  <p>
-    <%= form.label :title %><br>
+<!--  <p>
+    <%= form.label :title %> (5 characters minimum):<br>
     <%= form.text_field :title %>
   </p>
  
   <p>
-    <%= form.label :text %><br>
+    <%= form.label :text %> (5 characters minimum):<br>
     <%= form.text_area :text %>
   </p>
   
     <p>
-    Availability<br>
+    Availability (5 characters minimum):<br>
     <%= form.text_area :details %>
-  </p>
+  </p>-->
+  
+  <br>
+  <div class="col-xs-3 col-sm-5 col-lg-4 col-med-4" style="margin-bottom:20px;"> 
+  <div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= text_field :article, :title, placeholder: 'Offer title', class: 'form-control', autofocus: '' %></h5>
+      
+      <p class="card-text">
+      <%= text_area :article, :text, placeholder: 'Information about offer', class: 'form-control' %></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Available</span>
+          </div>
+  <!--<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="when?">-->
+          <%= text_field :article, :details, placeholder: 'when?', class: 'form-control' %>
+        </div>
+        
+      </small>
+    </div>
+  </div>
+</div>
+</div>
  
   <p>
-    <%= form.submit %>
+    <%= submit_tag 'Create deal', class: "btn btn-lg btn-primary btn-block", style: "width:200px" %>
   </p>
  
 <% end %>
