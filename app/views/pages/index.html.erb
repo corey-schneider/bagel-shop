@@ -84,7 +84,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Customer Testimonials</h1>
-    <p class="lead">Submit your own for a chance to win free bagels.</p>
+    <p class="lead"><a href="https://goo.gl/maps/z4s2uy7mfb1MrTvV8" target="_blank">Submit a review on our Google page</a> for a chance to win free bagels.</p>
     <hr class="my-4">
       <div class="column d-flex justify-content-around col-xs-6">
     <div class="col-4">
@@ -137,7 +137,7 @@
  <% if !current_user %>
    <p> You are not logged in</p>
  <% elsif current_user.admin_role? %>
-   <p> You are an admin <%= link_to '[Admin panel]', :rails_admin %></p>
+   <p> You are an admin </p>
  <% elsif current_user.user_role? %>
    <p> You are a user</p>
  <% else %>

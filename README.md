@@ -20,9 +20,13 @@ Bagel Patch uses a number of open-source projects to work properly:
 * <s>Clickable phone / address links in footer</s>
 * <s>Make the navigation bar look less like puke</s>
 * <s>Make navigation bar work for mobile users</s>
-* <s>Do not allow non-logged in users to edit / delete / create any articles</s>
+* <s>Do not allow guests users to edit / delete / create any articles</s>
+* <s>Footer link opens in new tab</s>
+* <s>Administrator control panel</s>
+* <s>Admin nav bar quick-controls</s>
+* <s>Log out nav bar item for USERS only</s>
 * Make a portal <s>and tie this into "deals" so logged-in users can edit / delete deals</s>, testimonials, pictures, etc
-* <b>Do not allow non-logged in users to view / <s>edit / delete /</s> create any users (/users)</b>
+* <b>Do not allow guests to view / <s>edit / delete /</s> create any users (/users)</b>
 * Add picture gallery section
 * Add contact us section with a space for a user to leave a testimonial that can be featured (and a chance to win a dozen bagels or something) ~ OR encourage a review on our Google page for a free entry to win a dozen bagels.
 * Sign up with your email for exclusive offers? Point system with accounts maybe?
@@ -41,14 +45,14 @@ Bagel Patch uses a number of open-source projects to work properly:
 
 ### Current permissions:
 * Admins can adjust admin roles for ALL users
-* Users cannot adjust admin roles
+* Users / guests cannot adjust admin roles
 * Users can change their password and edit their account, but nobody else's
-* Non-logged in users can see a list of the users
+* Guests (non-logged in users) can see a list of the users
 * Admin panel is only for admins
 
 ### Goal permissions:
-* Make non-users unable to see the user list (or at least email addresses)
-* Make non-users unaware that /admin even exists. Throw a 404
+* Make guests unable to see the user list (or at least email addresses)
+* Make guests unaware that /admin even exists. Throw a 404
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 

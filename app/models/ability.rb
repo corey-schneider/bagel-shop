@@ -9,12 +9,10 @@ class Ability
     can :read, :all
     can :manage, Article, user_id: user.id
     can :manage, User, email: user.email
-    if user.email == "test@test.com" || user.admin_role?
+    if user.admin_role?
     #return unless user.admin_role?
-    can :access, :rails_admin
-    can :read, :dashboard
-    can :manage, :dashboard
-    can :manage, :rails_admin
+    #can :access, :rails_admin
+    #can :read, :dashboard
     can :manage, :all
     end
   end
