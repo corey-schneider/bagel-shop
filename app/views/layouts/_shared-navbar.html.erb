@@ -1,57 +1,53 @@
 <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>-->
 <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container">
-        <%= link_to 'Bagel Patch', { controller: 'pages' }, class: 'navbar-brand' %>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <div class="collapse navbar-collapse border-left" id="navbarSupportedContent" >
-          <ul class="navbar-nav nav-fill w-100 align-items-start">
-            <!-- current_page?( ... ) can also be used as current_page?(controller: 'pages') -->
-            <li class="nav-item border-left <%= 'active' if current_page?(pages_index_path) || current_page?(root_path) %>">
-              <%= link_to 'Home', { controller: 'pages' }, class: 'nav-link' %>
-            </li>
-            <li class="nav-item border-left <%= 'active' if current_page?(menu_index_path) %>">
-              <%= link_to 'Menu', { controller: 'menu' }, class: 'nav-link' %>
-            </li>
-            <li class="nav-item border-left <%= 'active' if current_page?(contact_index_path) %>">
-              <%= link_to 'Contact', { controller: 'contact' }, class: 'nav-link' %>
-            </li>
-            <li class="nav-item border-left <%= 'active' if current_page?(about_index_path) %>">
-              <%= link_to 'About', { controller: 'about' }, class: 'nav-link' %>
-            </li>
-            
-            <% if !current_user %>
-            
-            <% elsif current_user.admin_role? %>
-            
-              <li class="nav-item dropdown border-left">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin tools</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item"><i>Hello, <%= current_user.name %>!</i></a>
-                  <%= link_to 'Admin Control Panel', :rails_admin, class: 'dropdown-item' %>
-                  <%= link_to "View / edit Deals", articles_path, class: 'dropdown-item' %>
-                  <%= link_to "View / edit Users", users_path, class: 'dropdown-item' %>
-                  <div class="dropdown-divider"></div>
-                  <%= link_to "Log out", logout_path, class: 'dropdown-item' %>
-                </div>
-              </li>
-              
-            <% elsif current_user.user_role? %>
-              <li class="nav-item border-left">
-              <%= link_to 'Log out', logout_path, class: 'nav-link' %>
-            </li>
-              
-            
-            <% end %>
-            
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-light">
+	<div class="container">
+		<%= link_to 'Bagel Patch', { controller: 'pages' }, class: 'navbar-brand' %>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse border-left" id="navbarSupportedContent" >
+			<ul class="navbar-nav nav-fill w-100 align-items-start">
+				<!-- current_page?( ... ) can also be used as current_page?(controller: 'pages') -->
+				<li class="nav-item border-left <%= 'active' if current_page?(pages_index_path) || current_page?(root_path) %>">
+					<%= link_to 'Home', { controller: 'pages' }, class: 'nav-link' %>
+				</li>
+				<li class="nav-item border-left <%= 'active' if current_page?(menu_index_path) %>">
+					<%= link_to 'Menu', { controller: 'menu' }, class: 'nav-link' %>
+				</li>
+				<li class="nav-item border-left <%= 'active' if current_page?(contact_index_path) %>">
+					<%= link_to 'Contact', { controller: 'contact' }, class: 'nav-link' %>
+				</li>
+				<li class="nav-item border-left <%= 'active' if current_page?(about_index_path) %>">
+					<%= link_to 'About', { controller: 'about' }, class: 'nav-link' %>
+				</li>
+				
+				<% if !current_user %>
+					<!--do nothing-->
+				<% elsif current_user.admin_role? %>
+					<li class="nav-item dropdown border-left">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin tools</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item"><i>Hello, <%= current_user.name %>!</i></a>
+							<%= link_to 'Admin Control Panel', :rails_admin, class: 'dropdown-item' %>
+							<%= link_to "View / edit Deals", articles_path, class: 'dropdown-item' %>
+							<%= link_to "View / edit Users", users_path, class: 'dropdown-item' %>
+							<div class="dropdown-divider"></div>
+							<%= link_to "Log out", logout_path, class: 'dropdown-item' %>
+						</div>
+					</li>
+				<% elsif current_user.user_role? %>
+					<li class="nav-item border-left">
+						<%= link_to 'Log out', logout_path, class: 'nav-link' %>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</nav>

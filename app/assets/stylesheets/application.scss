@@ -4,11 +4,11 @@
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
+	filter: invert(100%);
 }
 
 .footer {
-    background-color: #f5f5f5;
+	background-color: #f5f5f5;
 }
 
 
@@ -21,87 +21,87 @@
 
 
 /* FOOTER - thank you https://getbootstrap.com/2.3.2/examples/sticky-footer.html */
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
+	  html,
+	  body {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+	  }
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 70%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto 0px;
-      }
+	  /* Wrapper for page content to push down footer */
+	  #wrap {
+		min-height: 70%;
+		height: auto !important;
+		height: 100%;
+		/* Negative indent footer by it's height */
+		margin: 0 auto 0px;
+	  }
 
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 210px;
-      }
+	  /* Set the fixed height of the footer here */
+	  #push,
+	  #footer {
+		height: 210px;
+	  }
 
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
+	  /* Lastly, apply responsive CSS fixes as necessary */
+	  @media (max-width: 767px) {
+		#footer {
+		  margin-left: -20px;
+		  margin-right: -20px;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		}
+	  }
 /* End of footer */
 
 /* Hours table properties */
 table#hours {
-    border: 1px solid #000000;
-    background-color: #F9F8EE;
-    border-collapse: collapse;
-    font-family: 'Louis George Cafe';
-    font-size: 20px;
+	border: 1px solid #000000;
+	background-color: #F9F8EE;
+	border-collapse: collapse;
+	font-family: 'Louis George Cafe';
+	font-size: 20px;
 }
 /* add a new font for the Hours table */
 @font-face {
-    font-family: "Kenyan-coffee-rg";
-    src: url("../fonts/kenyan-coffee-rg.ttf") format("truetype");
+	font-family: "Kenyan-coffee-rg";
+	src: url("../fonts/kenyan-coffee-rg.ttf") format("truetype");
 }
 @font-face {
-    font-family: "CODE Bold";
-    src: url("../fonts/CODE Bold.otf") format("opentype");
+	font-family: "CODE Bold";
+	src: url("../fonts/CODE Bold.otf") format("opentype");
 }
 @font-face {
-    font-family: "Louis George Cafe";
-    src: url("../fonts/Louis George Cafe.ttf") format("truetype");
+	font-family: "Louis George Cafe";
+	src: url("../fonts/Louis George Cafe.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Louis George Cafe Bold";
-    src: url("../fonts/Louis George Cafe Bold.ttf") format("truetype");
+	font-family: "Louis George Cafe Bold";
+	src: url("../fonts/Louis George Cafe Bold.ttf") format("truetype");
 }
 
 /* th and td elements in a table */
 th, td {
-    padding: 10px;
-    border: 1px solid #b3b3ae;
-    border-collapse: collapse;
+	padding: 10px;
+	border: 1px solid #b3b3ae;
+	border-collapse: collapse;
 }
 
 /* Colors every even element's background white */
 tr:nth-child(even) {
-    background-color: white;
+	background-color: white;
 }
 
 
 /* Works with "./about.html" and "./js/about-page-script.js" to highlight today's date on the business hours sheet. */
 tr[id="selected-day-open"] {
-    background-color: #61FF65;
-    padding:50px;
-    border: 2px dotted black;
+	background-color: #61FF65;
+	padding:50px;
+	border: 2px dotted black;
 }
 tr[id="selected-day-closed"] {
-    background-color: rgba(255, 0, 0, 0.67);
-    padding:50px;
-    border: 2px dotted black;
+	background-color: rgba(255, 0, 0, 0.67);
+	padding:50px;
+	border: 2px dotted black;
 }
 
 
@@ -195,55 +195,55 @@ tr[id="selected-day-closed"] {
 
 
 .navbar {
-     background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
-     background-repeat: no-repeat;
-     border-bottom: 1px solid #806c58;
-     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-     border-radius: 0px;
-     font-size: 18px;
-     font-family: 'Louis George Cafe Bold';
+	 background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
+	 background-repeat: no-repeat;
+	 border-bottom: 1px solid #806c58;
+	 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+	 border-radius: 0px;
+	 font-size: 18px;
+	 font-family: 'Louis George Cafe Bold';
 }
 
 .navbar-default {
-     background-color: #2FA4E7;
-     border-color: #1995DC;
+	 background-color: #2FA4E7;
+	 border-color: #1995DC;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus ,
 .navbar-default .navbar-nav > li > a {
-     color: #FFF;
+	 color: #FFF;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-     color: #FFF;
-     background-color: #178ACC;
+	 color: #FFF;
+	 background-color: #178ACC;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #178ACC;
+	background-color: #178ACC;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #178ACC;
+	border-color: #178ACC;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
+	background-color: #FFF;
 }
 
 .container2 {
-    //box-shadow: 6px 0 4px  -4px #222 , -6px 0 4px  -4px #222;
-    box-shadow: 0px 0px 30px gray;
-    background: #FFFFFF;
-    padding: 2rem !important;
-    // margin: 0px 50px 0px 50px;
+	//box-shadow: 6px 0 4px  -4px #222 , -6px 0 4px  -4px #222;
+	box-shadow: 0px 0px 30px gray;
+	background: #FFFFFF;
+	padding: 2rem !important;
+	// margin: 0px 50px 0px 50px;
 }
 body {
-    background: #fafafa;
+	background: #fafafa;
 }
 
 //text color wanted: #483729

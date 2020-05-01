@@ -1,16 +1,13 @@
-
 <!-- <nav class="navbar navbar-light" style="background-color: #D99F7E;">
-  <a class="navbar-brand">Bagel Patch</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav> -->
+	<a class="navbar-brand">Bagel Patch</a>
+	<form class="form-inline">
+	  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form>
+	</nav> -->
 
 <h1>Welcome to Bagel Patch!</h1>
 <p>Serving fresh bagels to LI since 1980</p>
-
-
 <!-- slideshow -->
 <%= render 'slideshow' %>
 <!-- end -->
@@ -18,128 +15,123 @@
 
 <!-- Button trigger modal -->
 <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
--->
+	Launch demo modal
+	</button>
+	-->
+	
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- end -->
 
 <br><br><br>
 
+<h2 align="center"><u>Current Deals</u></h2>
 
-  
+<br>
 
-  <h2 align="center"><u>Current Deals</u></h2><br>
-  <div class="row d-flex justify-content-around">
-  <% @articles.each do |article| %>
-  <!-- col-lg-4 col-md-4 col-6 --> 
-  <div class="col-xs-6 col-sm-3" style="margin-bottom:20px;margin-left:0px;margin-right:0px;display:inline-block;"> 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><%= article.title %></h5>
-          <p class="card-text"><%= article.text %></p>
-        </div>
-        <% if !article.details.blank? %>
-        <div class="card-footer">
-          <small class="text-muted">Available 
-          <%= article.details %>
-          </small>
-        </div>
-        <% else %>
-        <br><br>
-          <!-- TODO look at this do nothing -->
-        <% end %>
-      </div>
-  </div>
-  <% end %>
+<div class="row d-flex justify-content-around">
+	<% @articles.each do |article| %>
+	<!-- col-lg-4 col-md-4 col-6 --> 
+	<div class="col-xs-6 col-sm-3" style="margin-bottom:20px;margin-left:0px;margin-right:0px;display:inline-block;">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title"><%= article.title %></h5>
+				<p class="card-text"><%= article.text %></p>
+			</div>
+			<% if !article.details.blank? %>
+			<div class="card-footer">
+				<small class="text-muted">Available 
+				<%= article.details %>
+				</small>
+			</div>
+			<% else %>
+			<br><br>
+			<!-- TODO look at this do nothing -->
+			<% end %>
+		</div>
+	</div>
+	<% end %>
 </div>
 <h6 style="text-align:right"><% if current_user %>
-      <%= link_to 'Edit the deals', controller: 'articles' %>
-  <% end %></h6>
-  
+	<%= link_to 'Edit the deals', controller: 'articles' %>
+	<% end %>
+</h6>
+
 
 <br><br><br>
 
+
 <!-- testimonials -->
-
 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Customer Testimonials</h1>
-    <p class="lead"><a href="https://goo.gl/maps/z4s2uy7mfb1MrTvV8" target="_blank">Submit a review on our Google page</a> for a chance to win free bagels.</p>
-    <hr class="my-4">
-      <div class="column d-flex justify-content-around col-xs-6">
-    <div class="col-4">
-      <blockquote class="blockquote">
-        <p class="mb-0">Bagels here are great!</p>
-        <footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
-      </blockquote>
-    </div>
-    
-    <div class="col-4">
-        <blockquote class="blockquote">
-      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-    </blockquote>
-    </div>
-  </div>
-  
-    <br><br>
-
-      <div class="column d-flex justify-content-around col-xs-6">
-     <div class="col-4">
-        <blockquote class="blockquote">
-      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-    </blockquote>
-    </div>
-      <div class="col-4">
-        <blockquote class="blockquote">
-      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-    </blockquote>
-    </div>
-    </div>
-    
-    <br><br>
-      <div class="column d-flex justify-content-around col-xs-6">
-      <div class="col-4">
-        <blockquote class="blockquote">
-      <p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-      <footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-    </blockquote>
-    </div>
-    </div>
-    
-
-    
-  </div>
+	<div class="container">
+		<h1 class="display-4">Customer Testimonials</h1>
+		<p class="lead"><a href="https://goo.gl/maps/z4s2uy7mfb1MrTvV8" target="_blank">Submit a review on our Google page</a> for a chance to win free bagels.</p>
+		<hr class="my-4">
+		<div class="column d-flex justify-content-around col-xs-6">
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">Bagels here are great!</p>
+					<footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
+				</blockquote>
+			</div>
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+				</blockquote>
+			</div>
+		</div>
+		<br><br>
+		<div class="column d-flex justify-content-around col-xs-6">
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+				</blockquote>
+			</div>
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+				</blockquote>
+			</div>
+		</div>
+		<br><br>
+		<div class="column d-flex justify-content-around col-xs-6">
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
+					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
 </div>
 
- <% if !current_user %>
-   <p> You are not logged in</p>
- <% elsif current_user.admin_role? %>
-   <p> You are an admin </p>
- <% elsif current_user.user_role? %>
-   <p> You are a user</p>
- <% else %>
-   <p> Error</p>
- <% end %>
+<% if !current_user %>
+  <p> You are not logged in</p>
+<% elsif current_user.admin_role? %>
+  <p> You are an admin </p>
+<% elsif current_user.user_role? %>
+  <p> You are a user</p>
+<% else %>
+  <p> Error</p>
+<% end %>

@@ -25,6 +25,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * ~~Administrator control panel~~
 * ~~Admin nav bar quick-controls~~
 * ~~Log out nav bar item for USERS only~~
+* ~~Visiting /login while logged in allows you to log in again. Remove that~~
 * Make a portal ~~and tie this into "deals" so logged-in users can edit / delete deals~~, testimonials, pictures, etc
 * **Do not allow guests to view / ~~edit / delete /~~ create any users (/users)**
 * Add picture gallery section
@@ -34,11 +35,11 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Leave website feedback in bottom right corner - Add CAPTCHA for this
 * Login CAPTCHA after 1 failed attempt
 * Add Google maps iframe of store
-* Make login email non-case sensitive
+* ~~Make login email non-case sensitive~~
+  * Solution: `sessions_controller.rb`, create method: add .downcase before email parameter is sent to database
 * Add content to Contact section
 * Add 404 pages before publishing
 * Consider adding HTTPS
-* Visiting /login while logged in allows you to log in again. Remove that
 * Brute force password protection (CAPTCHA would fix this)
 * Change password minimum from 6 --> 8
 * https://guides.rubyonrails.org/security.html
@@ -57,22 +58,25 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Make guests unaware that /admin even exists. Throw a 404
 
 ### Important information:
-* Addressed bootstrap issue [@30553](https://github.com/twbs/bootstrap/issues/30553) - Bootstrap 4.4.1 collapse doesn't work with jQuery 3.5.0. My solution: downgrade jQuery to 3.4.1 in `./package.json`
+* Addressed bootstrap issue [@30553](https://github.com/twbs/bootstrap/issues/30553) - Bootstrap 4.4.1 collapse doesn't work with jQuery 3.5.0.
+  * Solution taken: _downgrade jQuery to 3.4.1 in `./package.json`_
+
+#### [HTML formatter](https://www.freeformatter.com/html-formatter.html)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 
 
-   [Twitter Bootstrap]: <https://getbootstrap.com/>
-   [jQuery]: <http://jquery.com>
-   [Ruby on Rails]: <https://rubyonrails.org/>
-   
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+	[Twitter Bootstrap]: <https://getbootstrap.com/>
+	[jQuery]: <http://jquery.com>
+	[Ruby on Rails]: <https://rubyonrails.org/>
+	
+	[git-repo-url]: <https://github.com/joemccann/dillinger.git>
+	[john gruber]: <http://daringfireball.net>
+	[df1]: <http://daringfireball.net/projects/markdown/>
+	[markdown-it]: <https://github.com/markdown-it/markdown-it>
+	[Ace Editor]: <http://ace.ajax.org>
+	[node.js]: <http://nodejs.org>
+	[@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
+	[express]: <http://expressjs.com>
+	[AngularJS]: <http://angularjs.org>
+	[Gulp]: <http://gulpjs.com>
