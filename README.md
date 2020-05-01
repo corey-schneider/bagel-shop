@@ -14,21 +14,22 @@ Bagel Patch uses a number of open-source projects to work properly:
 #
 
 # TO DO:
-* <s>Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html)</s>
-* <s>Add all contents to the menu</s>
-* <s>Click on carousel to be taken to the menu</s>
-* <s>Clickable phone / address links in footer</s>
-* <s>Make the navigation bar look less like puke</s>
-* <s>Make navigation bar work for mobile users</s>
-* <s>Do not allow guests users to edit / delete / create any articles</s>
-* <s>Footer link opens in new tab</s>
-* <s>Administrator control panel</s>
-* <s>Admin nav bar quick-controls</s>
-* <s>Log out nav bar item for USERS only</s>
-* Make a portal <s>and tie this into "deals" so logged-in users can edit / delete deals</s>, testimonials, pictures, etc
-* <b>Do not allow guests to view / <s>edit / delete /</s> create any users (/users)</b>
+* ~~Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html)~~
+* ~~Add all contents to the menu~~
+* ~~Click on carousel to be taken to the menu~~
+* ~~Clickable phone / address links in footer~~
+* ~~Make the navigation bar look less like puke~~
+* ~~Make navigation bar work for mobile users~~
+* ~~Do not allow guests users to edit / delete / create any articles~~
+* ~~Footer link opens in new tab~~
+* ~~Administrator control panel~~
+* ~~Admin nav bar quick-controls~~
+* ~~Log out nav bar item for USERS only~~
+* Make a portal ~~and tie this into "deals" so logged-in users can edit / delete deals~~, testimonials, pictures, etc
+* **Do not allow guests to view / ~~edit / delete /~~ create any users (/users)**
 * Add picture gallery section
-* Add contact us section with a space for a user to leave a testimonial that can be featured (and a chance to win a dozen bagels or something) ~ OR encourage a review on our Google page for a free entry to win a dozen bagels.
+* ~~Add contact us section with a space for a user to leave a testimonial that can be featured (and a chance to win a dozen bagels or something)~~
+  * Instead, encourage a review on our Google page for a free entry to win a dozen bagels.
 * Sign up with your email for exclusive offers? Point system with accounts maybe?
 * Leave website feedback in bottom right corner - Add CAPTCHA for this
 * Login CAPTCHA after 1 failed attempt
@@ -36,7 +37,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Make login email non-case sensitive
 * Add content to Contact section
 * Add 404 pages before publishing
-* HTTPS?
+* Consider adding HTTPS
 * Visiting /login while logged in allows you to log in again. Remove that
 * Brute force password protection (CAPTCHA would fix this)
 * Change password minimum from 6 --> 8
@@ -54,6 +55,9 @@ Bagel Patch uses a number of open-source projects to work properly:
 ### Goal permissions:
 * Make guests unable to see the user list (or at least email addresses)
 * Make guests unaware that /admin even exists. Throw a 404
+
+### Important information:
+* Addressed bootstrap issue [@30553](https://github.com/twbs/bootstrap/issues/30553) - Bootstrap 4.4.1 collapse doesn't work with jQuery 3.5.0. My solution: downgrade jQuery to 3.4.1 in `./package.json`
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 
