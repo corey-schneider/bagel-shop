@@ -15,39 +15,38 @@ Bagel Patch uses a number of open-source projects to work properly:
 
 # TO DO:
 * <s>Enable "articles" (section 5 of https://guides.rubyonrails.org/getting_started.html)</s>
+* <s>Add all contents to the menu</s>
+* <s>Click on carousel to be taken to the menu</s>
+* <s>Clickable phone / address links in footer</s>
+* <s>Make the navigation bar look less like puke</s>
+* <s>Make navigation bar work for mobile users</s>
+* <s>Do not allow non-logged in users to edit / delete / create any articles</s>
 * Make a portal <s>and tie this into "deals" so logged-in users can edit / delete deals</s>, testimonials, pictures, etc
+* <b>Do not allow non-logged in users to view / <s>edit / delete /</s> create any users (/users)</b>
 * Add picture gallery section
 * Add contact us section with a space for a user to leave a testimonial that can be featured (and a chance to win a dozen bagels or something) ~ OR encourage a review on our Google page for a free entry to win a dozen bagels.
 * Sign up with your email for exclusive offers? Point system with accounts maybe?
 * Leave website feedback in bottom right corner - Add CAPTCHA for this
 * Login CAPTCHA after 1 failed attempt
 * Add Google maps iframe of store
-* <s>Add all contents to the menu</s>
 * Make login email non-case sensitive
-* <s>Click on carousel to be taken to the menu</s>
-* <s>Clickable phone / address links in footer</s>
-* <s>Make the navigation bar look less like puke</s>
-* <s>Make navigation bar work for mobile users</s>
 * Add content to Contact section
-* <s>Do not allow non-logged in users to edit / delete / create any articles</s>
-* <b>Do not allow non-logged in users to view / <s>edit / delete /</s> create any users (/users)</b>
 * Add 404 pages before publishing
 * HTTPS?
 * Visiting /login while logged in allows you to log in again. Remove that
 * Brute force password protection (CAPTCHA would fix this)
 * Change password minimum from 6 --> 8
 * https://guides.rubyonrails.org/security.html
-* app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling)
-* 
+* app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling) and do the same for /admin
 
-# Current permissions:
+### Current permissions:
 * Admins can adjust admin roles for ALL users
 * Users cannot adjust admin roles
 * Users can change their password and edit their account, but nobody else's
 * Non-logged in users can see a list of the users
 * Admin panel is only for admins
 
-#Goal permissions:
+### Goal permissions:
 * Make non-users unable to see the user list (or at least email addresses)
 * Make non-users unaware that /admin even exists. Throw a 404
 
