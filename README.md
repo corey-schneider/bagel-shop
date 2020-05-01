@@ -42,6 +42,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Change password minimum from 6 --> 8
 * https://guides.rubyonrails.org/security.html
 * app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling) and do the same for /admin
+* Fix navigation collapse (mobile view) not working
 
 ### Current permissions:
 * Admins can adjust admin roles for ALL users

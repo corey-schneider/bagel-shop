@@ -10,5 +10,14 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <strong>Role:</strong>
+    <% if @user.admin_role? %>
+      Administrator || <b>MAKE SURE YOU MEANT TO DO THIS.</b>
+    <% elsif @user.user_role? %>
+      User
+    <% end %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
