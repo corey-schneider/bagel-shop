@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    load_and_authorize_resource
   
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -70,6 +71,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation, :admin_role, :user_role)
     end
 end

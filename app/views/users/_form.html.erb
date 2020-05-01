@@ -30,6 +30,13 @@
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation %>
   </div>
+  
+  <% if current_user.admin_role? %>
+  <div class="field">
+    <p>Admin role:</p>
+    <%= check_box("user", "admin_role") %>
+  </div>
+  <% end %>
 
   <div class="actions">
     <%= form.submit %>

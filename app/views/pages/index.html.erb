@@ -133,5 +133,13 @@
     
   </div>
 </div>
-    <p>hello</p>
-<!-- end -->
+
+ <% if !current_user %>
+   <p> You are not logged in</p>
+ <% elsif current_user.admin_role? %>
+   <p> You are an admin <%= link_to '[Admin panel]', :rails_admin %></p>
+ <% elsif current_user.user_role? %>
+   <p> You are a user</p>
+ <% else %>
+   <p> Error</p>
+ <% end %>

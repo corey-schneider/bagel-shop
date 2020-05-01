@@ -1,22 +1,23 @@
 class ArticlesController < ApplicationController
+    load_and_authorize_resource
     
     def index
-        authenticate_admin
+        # authenticate_admin
         @articles = Article.all
     end
     
     def show
-        authenticate_admin
+        #authenticate_admin
         @article = Article.find(params[:id])
     end
     
     def new
-        authenticate_admin
+        #authenticate_admin
         @article = Article.new
     end
     
     def edit
-        authenticate_admin
+        #authenticate_admin
         @article = Article.find(params[:id])
     end
     
