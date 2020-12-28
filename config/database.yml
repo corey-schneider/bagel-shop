@@ -29,3 +29,4 @@ production:
   pool: 5
   username: <%= ENV['BAGEL_PATCH_DATABASE_USER'] %>
   password: <%= ENV['BAGEL_PATCH_DATABASE_PASSWORD'] %>
+  
