@@ -62,3 +62,8 @@ gem 'bundler-audit'
 gem 'cancancan'
 
 gem 'rails_admin'
+
+group :production do
+  gem 'pg'
+  gem 'puma'
+end
