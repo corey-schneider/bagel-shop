@@ -8,6 +8,11 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  
+    # Important configs for cloud9
+  template: template0
+  username: ubuntu
+  password: password
 
 development:
   <<: *default
