@@ -24,5 +24,6 @@ test:
 
 production:
   <<: *default
-  bagelpatch_production
+  # database: bagelpatch_production
+  database: <%= ENV['DATABASE_URL'] %>
   # database: db/production.sqlite3
