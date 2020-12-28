@@ -83,34 +83,19 @@
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<h1 class="display-4">Customer Testimonials</h1>
-		<p class="lead"><a href="https://goo.gl/maps/z4s2uy7mfb1MrTvV8" target="_blank">Submit a review on our Google page</a> for a chance to win free bagels.</p>
+		<p class="lead"><a href="https://goo.gl/maps/z4s2uy7mfb1MrTvV8" target="_blank">Submit a review on our Google page</a>!</p>
 		<hr class="my-4">
 		<div class="column d-flex justify-content-around col-xs-6">
 			<div class="col-4">
 				<blockquote class="blockquote">
-					<p class="mb-0">Bagels here are great!</p>
-					<footer class="blockquote-footer">Brenda from Huntington, NY</cite></footer>
+					<p class="mb-0">I've been going here for 20+ yrs. If this place closed I would lose a part of myself and need therapy for it.</p>
+					<footer class="blockquote-footer">Mike Scala</cite></footer>
 				</blockquote>
 			</div>
 			<div class="col-4">
 				<blockquote class="blockquote">
-					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-				</blockquote>
-			</div>
-		</div>
-		<br><br>
-		<div class="column d-flex justify-content-around col-xs-6">
-			<div class="col-4">
-				<blockquote class="blockquote">
-					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
-				</blockquote>
-			</div>
-			<div class="col-4">
-				<blockquote class="blockquote">
-					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+					<p class="mb-0">Quite simply the best bagels on Long Island. Whenever I visit family upstate, NJ, or PA, it is understood that I cannot arrive without a bag of Bagel Patch bagels!</p>
+					<footer class="blockquote-footer">Mike Binder</cite></footer>
 				</blockquote>
 			</div>
 		</div>
@@ -118,8 +103,23 @@
 		<div class="column d-flex justify-content-around col-xs-6">
 			<div class="col-4">
 				<blockquote class="blockquote">
-					<p class="mb-0">Been coming here for 20 years, best bagels on LI.</p>
-					<footer class="blockquote-footer">Tom Hanks from Manhattan, NY</cite></footer>
+					<p class="mb-0">Best. Bagels. On. Long Island. Definitely my go-to when I am on Long Island. Dubbed hot bagels, they wont let you down with fresh made bagels on the daily, and if you're looking for some bagels that do not even need to be toasted, and are just always fresh, then this needs to be your new go-to.</p>
+					<footer class="blockquote-footer">Rob Bento</cite></footer>
+				</blockquote>
+			</div>
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">This has been my go-to bagel place for 30 years. What is fantastic about them is their bagel twist. I can't say enough good things about getting a fresh bagel twist out of the oven. You definitely have to try it.</p>
+					<footer class="blockquote-footer">James De Lucia</cite></footer>
+				</blockquote>
+			</div>
+		</div>
+		<br><br>
+		<div class="column d-flex justify-content-around col-xs-6">
+			<div class="col-4">
+				<blockquote class="blockquote">
+					<p class="mb-0">If you want good fresh bagels, this is the place.  Even at 9 in the morning they are still bringing out fresh hot bagels!</p>
+					<footer class="blockquote-footer">Ken Coenen</cite></footer>
 				</blockquote>
 			</div>
 		</div>
@@ -127,7 +127,7 @@
 </div>
 
 <% if !current_user %>
-  <p> You are not logged in</p>
+  <p></p>
 <% elsif current_user.admin_role? %>
   <p> You are an admin </p>
 <% elsif current_user.user_role? %>

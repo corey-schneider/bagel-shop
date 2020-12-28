@@ -11,6 +11,9 @@
     </div>
   <% end %>
 
+<% if !current_user %>
+<p>No permission</p>
+<% else %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -30,15 +33,21 @@
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation %>
   </div>
+  <% end %>
   
-  <% if current_user.admin_role? %>
+<% if !current_user %>
+<p> </p>
+  <% elsif current_user.admin_role? %>
   <div class="field">
     <p>Admin role:</p>
     <%= check_box("user", "admin_role") %>
   </div>
   <% end %>
 
+<% if !current_user %>
+<% else %>
   <div class="actions">
     <%= form.submit %>
   </div>
+  <% end %>
 <% end %>

@@ -16,7 +16,7 @@
 		<% @users.each do |user| %>
 			<tr>
 				<td><% if user.admin_role? %><%= image_tag("crown.jpg", :alt => "admin crown", style: "position:relative; bottom: 3px") %><% end %>  <%= user.name %></td>
-				<td><%= user.email %></td>
+				<td><% if !current_user %><p>[email hidden]</p><% else %><%= user.email %><%end%></td>
 				<td><% if user.admin_role? %>
 				<!--<%#= check_box("user", "admin_role", {:checked => true, disabled: ''} ) %>-->
 					Admin
