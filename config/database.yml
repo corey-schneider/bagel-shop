@@ -27,5 +27,5 @@ production:
   encoding: utf8
   database: bagel-patch_production
   pool: 5
-  username: <%= ENV['BAGEL-PATCH_DATABASE_USER'] %>
-  password: <%= ENV['BAGEL-PATCH_DATABASE_PASSWORD'] %>
+  username: <%= ENV['BAGEL_PATCH_DATABASE_USER'] %>
+  password: <%= ENV['BAGEL_PATCH_DATABASE_PASSWORD'] %>
