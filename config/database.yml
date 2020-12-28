@@ -22,11 +22,4 @@ test:
 
 production:
   <<: *default
-  host: localhost
-  adapter: postgresql
-  encoding: utf8
-  database: bagel-patch_production
-  pool: 5
-  username: <%= ENV['BAGEL_PATCH_DATABASE_USER'] %>
-  password: <%= ENV['BAGEL_PATCH_DATABASE_PASSWORD'] %>
-  
+  database: db/production.sqlite3
