@@ -45,6 +45,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * https://guides.rubyonrails.org/security.html
 * app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling) and do the same for /admin
 * Fix navigation collapse (mobile view) not working
+* Catering
 
 ### Current permissions:
 * Admins can adjust admin roles for ALL users
@@ -59,7 +60,8 @@ Bagel Patch uses a number of open-source projects to work properly:
 
 ### Important information:
 * Addressed bootstrap issue [@30553](https://github.com/twbs/bootstrap/issues/30553) - Bootstrap 4.4.1 collapse doesn't work with jQuery 3.5.0.
-  * Solution taken: _downgrade jQuery to 3.4.1 in `./package.json`_
+  * Solution: _downgrade jQuery to 3.4.1 in `./package.json`_
+    * Problem with this: jQuery 3.4.1 has a security vulnerability (CVE-2020-11022)
 
 #### [HTML formatter](https://www.freeformatter.com/html-formatter.html)
 
