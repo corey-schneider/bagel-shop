@@ -4,12 +4,14 @@
 
 #
 
-### Credit to open-source contributors
+### Credit to open-source contributors / tools used in the development of this project
 
 Bagel Patch uses a number of open-source projects to work properly:
 * [Twitter Bootstrap] - Open-source CSS framework *(this makes the website pretty)*
 * [jQuery] - A fast, small, and feature-rich JavaScript library
 * [Ruby on Rails] - Web application framework
+* [Cloud9] - In-browser IDE and server
+* [Heroku] - Made deployment of this application VERY simple
 
 #
 
@@ -34,17 +36,18 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Sign up with your email for exclusive offers? Point system with accounts maybe?
 * Leave website feedback in bottom right corner - Add CAPTCHA for this
 * Login CAPTCHA after 1 failed attempt
-* Add Google maps iframe of store
+* ~~Add Google maps iframe of store~~
 * ~~Make login email non-case sensitive~~
   * Solution: `sessions_controller.rb`, create method: add .downcase before email parameter is sent to database
-* Add content to Contact section
+* ~~Add content to Contact section~~
 * Add 404 pages before publishing
-* Consider adding HTTPS
+* ~~Consider adding HTTPS~~
+  * Solution: Porkbun --> Cloudflare --> Heroku
 * Brute force password protection (CAPTCHA would fix this)
 * Change password minimum from 6 --> 8
 * https://guides.rubyonrails.org/security.html
 * app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling) and do the same for /admin
-* Fix navigation collapse (mobile view) not working
+* ~~Fix navigation collapse (mobile view) not working~~
 * Catering
 
 ### Current permissions:
@@ -84,3 +87,5 @@ Bagel Patch uses a number of open-source projects to work properly:
   [express]: <http://expressjs.com>
   [AngularJS]: <http://angularjs.org>
   [Gulp]: <http://gulpjs.com>
+  [Cloud9]: <https://github.com/c9/core>
+  [Heroku]: <https://heroku.com/>

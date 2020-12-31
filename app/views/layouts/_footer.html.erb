@@ -4,24 +4,31 @@
 <footer class="footer">
   
   <div class="container px-lg-5">
-  <div class="row mx-lg-n5">
-    <div class="col py-3 px-lg-5 text-center"><b>Hours of Operation</b><br>
-    <%= link_to 'Monday - Sunday (7 days): 5AM - 3PM', controller: 'about' %>
-    </div>
-    <div class="col py-3 px-lg-5 border-left text-center"><b>Contact Us</b><br>
-    <a href="https://goo.gl/maps/A2uqx9gYC4QPEH8r5" target="_blank">705 Medford Ave # A, East Patchogue, NY 11772</a><br>
-    Phone: <a href="tel:16312894949">(631) 289-4949</a></div>
+    <div class="row mx-lg-n5">
+      <div class="col py-3 px-lg-5 text-center"><b>Hours of Operation</b><br>
+        <%= link_to 'Monday - Sunday (7 days): 5AM - 3PM', controller: 'about' %><br>
+        <% if current_page?('/about/index') %>
+          <!-- do nothing -->
+        <% else %>
+          <a>We are currently <span id="open_or_closed">[error loading plugin, please reload]</span>.</a>
+        <% end %>
+      </div>
+      
+      <div class="col py-3 px-lg-5 border-left text-center"><b>Contact Us</b><br>
+        <a href="https://goo.gl/maps/A2uqx9gYC4QPEH8r5" target="_blank">705 Medford Ave # A, East Patchogue, NY 11772</a><br>
+        Phone: <a href="tel:16312894949">(631) 289-4949</a></div>
+      </div>
   </div>
-</div>
+  
   <br>
   <!-- Copyright -->
   <div class="container text-center py-3">
     <span class="text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <!-- auto-updates copy right year -->
-    <a href="https://github.com/corey-schneider">Corey Schneider</a> - Student at <a href="https://uncc.edu">UNC Charlotte</a><br>
+    <a href="https://github.com/corey-schneider">Corey Schneider</a><br>
     <% if current_user %>
       <%= link_to "Log out", logout_path %> [<%= current_user.name %>; <%= current_user.email %>].
         <% else %>
-      <p style="font-size:10px"><%= link_to "Admin log in", login_path %></p>
+      <p style="font-size:8px"><%= link_to "Admin log in", login_path %></p>
     <% end %></span>
   </div>
   <!-- Copyright -->
