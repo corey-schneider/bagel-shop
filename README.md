@@ -49,6 +49,10 @@ Bagel Patch uses a number of open-source projects to work properly:
 * app/controllers/application_controller.rb: [Return 404 instead of 302](https://github.com/CanCanCommunity/cancancan/wiki/exception-handling) and do the same for /admin
 * ~~Fix navigation collapse (mobile view) not working~~
 * Catering
+* Fix favicon to be creative commons licensed
+* Individual bagel pictures
+* Individual cream cheese pictures
+* Omelette tab
 
 ### Current permissions:
 * Admins can adjust admin roles for ALL users
@@ -58,7 +62,7 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Admin panel is only for admins
 
 ### Goal permissions:
-* Make guests unable to see the user list (or at least email addresses)
+* ~~Make guests unable to see the user list (or at least email addresses)~~
 * Make guests unaware that /admin even exists. Throw a 404
 
 ### Important information:
