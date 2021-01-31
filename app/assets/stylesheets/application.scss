@@ -61,6 +61,7 @@ table#hours {
 	font-family: 'Louis George Cafe';
 	font-size: 20px;
 }
+
 /* add a new font for the Hours table */
 @font-face {
 	font-family: "Kenyan-coffee-rg";
@@ -195,7 +196,8 @@ tr[id="selected-day-closed"] {
 
 
 .navbar {
-	 background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
+	 //background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
+	 background-image: linear-gradient(#f2be8a, #cfa172 60%, #b38759);
 	 background-repeat: no-repeat;
 	 border-bottom: 1px solid #806c58;
 	 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
