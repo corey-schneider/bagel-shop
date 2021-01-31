@@ -72,11 +72,11 @@ Bagel Patch uses a number of open-source projects to work properly:
 
 #### [HTML formatter](https://www.freeformatter.com/html-formatter.html)
 
-[//]: # To send the application to Heroku:
-[//]: # git add .
-[//]: # git commit -m ""
-[//]: # git push origin master
-[//]: # git push heroku master
+[//]: # (To send the application to Heroku:)
+[//]: # (git add .)
+[//]: # (git commit -m "")
+[//]: # (git push origin master)
+[//]: # (git push heroku master)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax ..... And thank you https://dillinger.io/ for making my README easier to make!)
 
