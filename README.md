@@ -53,6 +53,9 @@ Bagel Patch uses a number of open-source projects to work properly:
 * Individual bagel pictures
 * Individual cream cheese pictures
 * Omelette tab
+* Search Engine Optimization (SEO)
+  * title tags
+  * meta tags
 
 ### Current permissions:
 * Admins can adjust admin roles for ALL users
