@@ -1,6 +1,6 @@
 # Bagel Patch Website
 ##### Created & designed by Corey Schneider
-###### In-progress Computer Science B.S. at the University of North Carolina - Charlotte
+###### B.S. in Computer Science from the University of North Carolina at Charlotte
 
 #
 
