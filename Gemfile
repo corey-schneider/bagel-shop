@@ -64,3 +64,4 @@ gem 'bundler-audit'
 gem 'cancancan'
 
 gem 'rails_admin'
+gem "recaptcha", "~> 5.8"

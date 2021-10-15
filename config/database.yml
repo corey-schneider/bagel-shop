@@ -17,6 +17,8 @@ default: &default
 development:
   <<: *default
   # database: db/development.sqlite3
+  username: coreyschneider
+  password: 
   database: bagelpatch_dev
 
 # Warning: The database defined as "test" will be erased and
