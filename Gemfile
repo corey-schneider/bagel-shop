@@ -65,3 +65,5 @@ gem 'cancancan'
 
 gem 'rails_admin'
 gem "recaptcha", "~> 5.8"
+
+gem 'ahoy_matey'
