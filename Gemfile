@@ -6,8 +6,6 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem "activesupport", ">= 6.0.3.1"
-# Use sqlite3 as the database for Active Record
-#gem 'sqlite3', '~> 1.4'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '>= 4.3.5'
@@ -34,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jquery-rails'
 
 group :development, :test do
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -65,3 +64,5 @@ gem 'cancancan'
 
 gem 'rails_admin'
 gem "recaptcha", "~> 5.8"
+
+gem 'ahoy_matey'
