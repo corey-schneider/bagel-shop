@@ -42,15 +42,6 @@
 		height: 210px;
 	  }
 
-	  /* Lastly, apply responsive CSS fixes as necessary */
-	  @media (max-width: 767px) {
-		#footer {
-		  margin-left: -20px;
-		  margin-right: -20px;
-		  padding-left: 20px;
-		  padding-right: 20px;
-		}
-	  }
 /* End of footer */
 
 /* Hours table properties */
@@ -196,8 +187,8 @@ tr[id="selected-day-closed"] {
 
 
 .navbar {
-	 //background-image: linear-gradient(#e6c39e, #d1b290 60%, #C0A384);
-	 background-image: linear-gradient(#f2be8a, #cfa172 60%, #b38759);
+	//  background-image: linear-gradient(#f2be8a, #cfa172 60%, #b38759);
+	 background: #F2B279;
 	 background-repeat: no-repeat;
 	 border-bottom: 1px solid #806c58;
 	 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
@@ -206,44 +197,38 @@ tr[id="selected-day-closed"] {
 	 font-family: 'Louis George Cafe Bold';
 }
 
-.navbar-default {
-	 background-color: #2FA4E7;
-	 border-color: #1995DC;
+/* Show the nav elements as smaller 'pills' until device size is small */
+@media only screen and (min-width: 992px) {
+	.navbar-nav > li {
+		margin-left:30px;
+		margin-right:30px;
+	}
 }
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus ,
-.navbar-default .navbar-nav > li > a {
-	 color: #FFF;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-	 color: #FFF;
-	 background-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-	background-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle {
-	border-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #FFF;
-}
+/* Active legit */
+.navbar-nav > .nav-item.active {
+	background: rgb(194, 142, 90) !important;
+	border-radius: 5px;
+ }
+ 
+ /* Hover legit */
+ .navbar-nav > .nav-item:hover:not(.active),
+ .navbar-nav > .nav-item:focus:not(.active) {
+	background: #eebf96 !important;
+	border-radius: 5px !important;
+ }
 
 .container2 {
-	//box-shadow: 6px 0 4px  -4px #222 , -6px 0 4px  -4px #222;
-	box-shadow: 0px 0px 30px gray;
-	background: #FFFFFF;
 	padding: 2rem !important;
-	// margin: 0px 50px 0px 50px;
-}
+ }
+
+@media only screen and (min-width: 600px) {
+	.container2 {
+	   box-shadow: 0px 0px 30px gray;
+	   background: #FFFFFF;
+	   min-height: calc(100vh);
+	}
+ }
+
 body {
 	background: #fafafa;
 }
