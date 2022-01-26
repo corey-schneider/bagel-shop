@@ -68,10 +68,12 @@ Bagel Patch uses a number of open-source projects to work properly:
 * ~~Make guests unable to see the user list (or at least email addresses)~~
 * Make guests unaware that /admin even exists. Throw a 404
 
-### Important information:
+### Additional information:
 * Addressed bootstrap issue [@30553](https://github.com/twbs/bootstrap/issues/30553) - Bootstrap 4.4.1 collapse doesn't work with jQuery 3.5.0.
   * Solution: _downgrade jQuery to 3.4.1 in `./package.json`_
     * Problem with this: jQuery 3.4.1 has a security vulnerability (CVE-2020-11022)
+* Deploying to Heroku is sometimes a breeze, but when it's not:
+  * issues with `node-gyp`? add `heroku/nodejs` buildpack (make sure it is placed ABOVE `heroku/ruby` buildpack) and set the `node` version in `package.json` to match your local machine (assuming your local machine is working as expected)
 
 #### [HTML formatter](https://www.freeformatter.com/html-formatter.html)
 
