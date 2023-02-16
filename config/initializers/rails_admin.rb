@@ -1,15 +1,14 @@
 RailsAdmin.config do |config|
-  config.asset_source = :webpacker
-#config.authorize_with :cancancan
+  # config.asset_source = :webpacker
+  # config.authorize_with :cancancan
 
   config.parent_controller = "::ApplicationController"
-  
+
   config.authorize_with do
     if !current_user || !current_user.admin_role?
       redirect_to(main_app.root_path, alert: "You are not permitted to view this page")
     end
   end
-
 
 #config.parent_controller = 'ApplicationController' # enabling this uses application_controller.rb to do whatever action it is told to do.
   ### Popular gems integration
