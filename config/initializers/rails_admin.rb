@@ -1,5 +1,6 @@
 RailsAdmin.config do |config|
   # config.asset_source = :webpacker
+  config.asset_source = :sprockets
   # config.authorize_with :cancancan
 
   config.parent_controller = "::ApplicationController"
