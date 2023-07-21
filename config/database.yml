@@ -17,3 +17,4 @@ test:
 production:
   <<: *default
   database: bagelpatch_production
+  host: dpg-cisuhglph6et1sa50ktg-a.oregon-postgres.render.com
