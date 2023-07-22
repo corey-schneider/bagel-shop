@@ -2,7 +2,11 @@
 ##### Created & designed by Corey Schneider
 ###### B.S. in Computer Science from the University of North Carolina at Charlotte
 
-#
+<hr>
+
+##### Resume note - This is the first Ruby on Rails application I have created. A live demo can be found at https://bagelpatch.onrender.com/
+
+<hr>
 
 ### Credit to open-source contributors / tools used in the development of this project
 
