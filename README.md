@@ -4,7 +4,9 @@
 
 <hr>
 
-##### Resume note - This is the first Ruby on Rails application I have created. A live demo can be found at https://bagelpatch.onrender.com/
+##### Resume note - This is the first Ruby on Rails application I have created. A live demo can be found at https://bagelpatch.onrender.com/.
+##### A demo admin account can be logged into with the following credentials: 
+https://bagelpatch.onrender.com/login → `demo@test.com` : `abc123`
 
 <hr>
 
