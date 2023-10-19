@@ -7,7 +7,9 @@ ruby '3.0.2'
 gem 'rails', '~> 6.1.4'
 gem 'activesupport', '>= 6.0.3.1'
 
-gem 'pg'
+# gem 'pg'
+gem 'sqlite3'
+
 # Use Puma as the app server
 gem 'puma', '>= 4.3.5'
 # Use SCSS for stylesheets
@@ -65,4 +67,3 @@ gem 'cancancan'
 
 gem 'rails_admin'
 gem 'recaptcha', '~> 5.8'
-
